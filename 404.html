@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--=== BoxIcons CSS ===-->
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--=== Title ===-->
+    <title>404 Page Not Found | Stackly - ERP & ERP Solutions</title>
+    <link rel="icon" href="data:,">
+
+    <!-- Custom CSS for the 404 screen layout -->
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0b1528 0%, #030814 100%);
+            font-family: "Poppins", sans-serif;
+            color: #ffffff;
+        }
+
+        .error-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .error-content-box {
+            text-align: center;
+            max-width: 600px;
+            padding: 30px;
+            z-index: 10;
+        }
+
+        /* Large 404 text with beautiful gradient */
+        .big-404 {
+            font-size: 160px;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #0865f8, #f12711);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 15px 30px rgba(8, 101, 248, 0.2));
+            animation: floatText 4s ease-in-out infinite;
+        }
+
+        @keyframes floatText {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .error-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+
+        .error-desc {
+            font-size: 16px;
+            color: #b0c4de;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        /* Button group */
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .btn-go-back {
+            background: #0865f8;
+            color: #ffffff;
+            border: none;
+            padding: 14px 35px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(8, 101, 248, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-go-back:hover {
+            background: #0550c6;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(8, 101, 248, 0.4);
+        }
+
+        .btn-home {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            padding: 12px 35px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-home:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: #ffffff;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Animated background elements */
+        .bg-circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 1;
+            opacity: 0.15;
+            animation: pulseCircles 8s ease-in-out infinite alternate;
+        }
+
+        .circle-blue {
+            width: 400px;
+            height: 400px;
+            background: #0865f8;
+            top: 10%;
+            left: 15%;
+        }
+
+        .circle-red {
+            width: 500px;
+            height: 500px;
+            background: #f12711;
+            bottom: 10%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        @keyframes pulseCircles {
+            0% { transform: scale(1) translate(0, 0); }
+            100% { transform: scale(1.1) translate(20px, 20px); }
+        }
+
+        /* Floating particles */
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            z-index: 2;
+            animation: riseParticles 20s infinite linear;
+        }
+
+        @keyframes riseParticles {
+            0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+            50% { opacity: 0.5; }
+            100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background animations -->
+    <div class="bg-circle circle-blue"></div>
+    <div class="bg-circle circle-red"></div>
+
+    <!-- Floating particles script placeholder -->
+    <div class="particle" style="width: 10px; height: 10px; left: 10%; animation-duration: 15s; animation-delay: 1s;"></div>
+    <div class="particle" style="width: 6px; height: 6px; left: 25%; animation-duration: 25s; animation-delay: 3s;"></div>
+    <div class="particle" style="width: 14px; height: 14px; left: 45%; animation-duration: 18s; animation-delay: 5s;"></div>
+    <div class="particle" style="width: 8px; height: 8px; left: 70%; animation-duration: 22s; animation-delay: 2s;"></div>
+    <div class="particle" style="width: 12px; height: 12px; left: 85%; animation-duration: 16s; animation-delay: 4s;"></div>
+
+    <div class="error-wrapper">
+        <div class="error-content-box wow animate__fadeInUp" data-wow-delay="0.1s">
+            <div class="big-404">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-desc">
+                The page you are looking for might have been removed, had its name changed, or is temporarily unavailable. Let's get you back on track!
+            </p>
+
+            <div class="button-group">
+                <!-- Go back using browser history -->
+                <button class="btn-go-back" onclick="goBackHistory()">
+                    <i class='bx bx-left-arrow-alt' style="font-size: 20px;"></i>
+                    Go Back
+                </button>
+                
+                <!-- Link to index.html -->
+                <a href="index.html" class="btn-home">
+                    <i class='bx bx-home-alt' style="font-size: 20px;"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery Slim JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Wow Popup JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Custom Script for Go Back history handler -->
+    <script>
+        function goBackHistory() {
+            if (document.referrer && (document.referrer.includes('userdashboard.html') || document.referrer.includes('admindashboard.html'))) {
+                window.location.href = document.referrer;
+            } else if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</body>
+
+</html>
